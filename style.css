@@ -1,0 +1,13 @@
+@charset "UTF-8";
+
+/* SO ESTRUTURA */
+@import url(header.css);
+
+
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+}
