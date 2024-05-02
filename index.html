@@ -7,17 +7,38 @@
     <link rel="stylesheet" href="style.css">
     <title>Document</title>
 </head>
-<body class="container-fluid">
-    <header>
-        <div class="navbar bg-body-tertiary">
-            <div class="container-fluid">
-              <a class="navbar-brand" href="#">
-                <img src="assets/OIG1-removebg-preview.png" width="100px" height="100px" alt="Logo" width="30" height="24" class="d-inline-block align-text-top">
-                DKL Cripto
-              </a>
-            </div>
+<body>
+    <header class="container-fluid  sticky-top">
+        <div class="logo">
+          <img src="assets/OIG1-removebg-preview.png" alt="">
+          <h1>DKL Cripto</h1>
         </div>
-        <nav></nav>
+        <nav class="navbar border-body" data-bs-theme="dark">
+          <nav class="navbar navbar-expand-lg">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="#">Home</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">Por que DKL?</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Sobre</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Pricing</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+        </nav>
     </header>
     
 </body>
