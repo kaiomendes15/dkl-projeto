@@ -4,12 +4,16 @@ header {
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
-    background-color: #212529;
+    background: #000043;
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 5px );
+    -webkit-backdrop-filter: blur( 5px );
 }
 
 header .logo{
     display: flex;
     align-items: center;
+    justify-content: center;
     flex-direction: row;
     flex-wrap: wrap;
 }
@@ -21,3 +25,8 @@ header .logo h1{
 header .logo img {
     width: 100px;
 }
+
+span {
+    color: rgba(231, 153, 80, 0.815);
+}
+

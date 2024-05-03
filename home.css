@@ -1,0 +1,49 @@
+@charset "UTF-8";
+
+body{
+    background-color: #000043;
+}
+.home {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    margin: 50px 100px 50px 100px;
+    border-radius: 25px;
+}
+.caixinha {
+    background-color: aqua;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.caixinha h2, p {
+    display: flex;
+    padding: 0;
+    margin: 0;
+}
+
+.card-backgroundcolor {
+    background-color: grey;
+}
+
+.formulario input{
+    width: 20vw;
+    padding: 5px 20px 5px 20px;
+    border-radius: 25px;
+    border: none;
+}
+
+.formulario {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    padding: 20px;
+    background: #1e2e6a;
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 4px );
+    -webkit-backdrop-filter: blur( 4px );
+    border-radius: 10px;
+}
+
