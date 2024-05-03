@@ -1,49 +1,84 @@
 @charset "UTF-8";
 
-body{
+body {
     background-color: #000043;
+    margin: 0; /* Removendo margens padrão do body */
 }
-.home {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 20px;
-    margin: 50px 100px 50px 100px;
-    border-radius: 25px;
+
+#home {
+    display: flex;/* Centralizar conteúdo */
+    padding: 40px 20px; /* Reduzindo preenchimento horizontal */
 }
-.caixinha {
-    background-color: aqua;
+
+.container {
+    max-width: 1000px; /* Limitando largura do conteúdo */
+    width: 100%;
+}
+
+.texto {
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: flex-start; /* Centralizar texto */
+    width: 40%;
+    padding: 20px 0px 20px 80px;
+    text-align: flex-start; /* Centralizar texto */
 }
 
-.caixinha h2, p {
-    display: flex;
-    padding: 0;
-    margin: 0;
+.texto h2 {
+    font-size: 3.5em; /* Usando em para tamanho de fonte */
+    color: white;
+    padding-bottom: 20px;
 }
 
-.card-backgroundcolor {
-    background-color: grey;
+.texto p {
+    color: white;
+    font-size: 1.7em;
 }
 
-.formulario input{
-    width: 20vw;
-    padding: 5px 20px 5px 20px;
-    border-radius: 25px;
-    border: none;
+.texto a {
+    text-decoration: none;
+    font-size: 1.3em;
+    color: white;
+    background: rgba(91, 0, 170, 0.65);
+    box-shadow: 5px 5px 10px 0 rgba(192, 193, 216, 0.37);
+    border-radius: 15px;
+    padding: 10px 20px; /* Aumentando espaço interno */
+    transition: transform 0.8s;
 }
 
-.formulario {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    padding: 20px;
-    background: #1e2e6a;
-    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
-    backdrop-filter: blur( 4px );
-    -webkit-backdrop-filter: blur( 4px );
-    border-radius: 10px;
+.texto a:hover {
+    transform: scale(1.1); /* Corrigindo propriedade scale */
+}
+
+.bolalink {
+    margin-top: 20px; /* Adicionando espaço acima do link */
+}
+
+@media screen and (min-width: 1000px) {
+    #home {
+        justify-content: flex-start; /* Alinhar à esquerda para telas maiores */
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    #home {
+        justify-content: center; /* Centralizar para telas menores */
+    }
+
+    .texto h2 {
+        font-size: 2.5em; /* Reduzindo o tamanho da fonte */
+        padding-bottom: 10px; /* Reduzindo o espaço abaixo do título */
+    }
+
+    .texto p {
+        display: flex;
+        flex-wrap: wrap;
+        font-size: 1.1em; /* Reduzindo o tamanho da fonte */
+    }
+
+    .texto a {
+        font-size: 1em; /* Reduzindo o tamanho da fonte */
+        padding: 8px 15px; /* Reduzindo o espaço interno */
+    }
 }
 
