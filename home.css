@@ -34,21 +34,22 @@ body {
     color: white;
     font-size: 2.3em;
 }
-
-.texto .bolalink  a {
+.texto .bolalink a{
     text-decoration: none;
-    font-size: 1.5em;
     color: white;
     background: rgba(91, 0, 170, 0.65);
     box-shadow: 5px 5px 10px 0 rgba(192, 193, 216, 0.37);
     border-radius: 15px;
-    padding: 10px 30px; /* Aumentando espaço interno */
-    transition: transform 500ms;
+    font-size: 1.8rem;
+    padding: 5px 10px 5px 10px;
+    transition: 500ms;
+    
 }
 
 .texto .bolalink a:hover {
     transform: scale(1.8);
 }
+
 
 .bolalink {
     margin-top: 20px; /* Adicionando espaço acima do link */
